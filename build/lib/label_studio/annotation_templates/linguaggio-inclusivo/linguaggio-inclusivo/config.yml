@@ -2,6 +2,7 @@ title: Linguaggio Inclusivo
 type: community
 group: Linguaggio Inclusivo
 details: <h1>Annotazione documenti per linguaggio inclusivo</h1>
+image: /static/templates/linguaggio-inclusivo.png
 config: '
 <View>
   <Header value="Tag (clic sul tipo + evidenziazione sul testo):"/>
@@ -29,15 +30,15 @@ config: '
     <Choice value="tecnico"/>
     <Choice value="divulgativo"/>
     <Choice value="informativo"/>
-  <Header value="-------------------------------------------------"/>
   </Choices>
+  <Header value="-------------------------------------------------"/>
     <Labels name="to_change" toName="text_2">
     <Label value="Porzione da modificare" background="#0000ff"/>
   </Labels>
   <Text name="text_2" value="$sentence" granularity="word"/>
   <Header value="-------------------------------------------------"/>
   <Header value="Riformulazioni della sequenza (una o più):"/>
-  <TextArea name="translations" value="$sentence"/>
+  <TextArea name="translations" value="$sentence" rows="5"/>
 </View>
 <!-- {
 "data": {"sentence": "This is a great 3D movie that delivers everything almost right in your face."}

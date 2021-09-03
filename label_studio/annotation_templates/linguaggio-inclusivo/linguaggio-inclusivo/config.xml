@@ -32,7 +32,7 @@
   <Text name="text_2" value="$sentence" granularity="word"/>
   <Header value="-------------------------------------------------"/>
   <Header value="Riformulazioni della sequenza (una o più):"/>
-  <TextArea name="translations" value="$sentence"/>
+  <TextArea name="translations" value="$sentence" rows="5"/>
 </View>
 <!-- {
 "data": {"sentence": "This is a great 3D movie that delivers everything almost right in your face."}
