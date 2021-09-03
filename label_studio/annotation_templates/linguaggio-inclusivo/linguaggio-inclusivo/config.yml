@@ -1,0 +1,47 @@
+title: Linguaggio Inclusivo
+type: community
+group: Linguaggio Inclusivo
+details: <h1>Annotazione documenti per linguaggio inclusivo</h1>
+image: ./3844041.jpg
+config: '
+<View>
+  <Header value="Tag (clic sul tipo + evidenziazione sul testo):"/>
+  <Labels name="ner" toName="text">
+    <Label value="Titolo Doc" background="#0000ff"/>
+    <Label value="Citazione" background="#00aaaa"/>
+    <Label value="Appellativo" background="#00ff00"/>
+    <Label value="Sintagma" background="#ff0000"/>
+    <Label value="Black List" background="#000000"/>
+  </Labels>
+  <Text name="text" value="$sentence" granularity="word"/>
+  <Header value="-------------------------------------------------"/>
+  <Header value="Classe:"/>
+  <Choices name="inclusive_class" toName="text" choice="single" showInLine="true">
+    <Choice value="Inclusivo"/>
+    <Choice value="Non inclusivo"/>
+    <Choice value="Non pertinente"/>
+    <Choice value="Non so"/>
+  </Choices>
+  <Header value="-------------------------------------------------"/>
+  <Header value="Sequenza discorsiva:"/>
+  <Choices name="seq_discourse" toName="text" choice="single" showInLine="true">
+    <Choice value="giuridico"/>
+    <Choice value="amministrativo"/>
+    <Choice value="tecnico"/>
+    <Choice value="divulgativo"/>
+    <Choice value="informativo"/>
+  <Header value="-------------------------------------------------"/>
+  </Choices>
+    <Labels name="to_change" toName="text_2">
+    <Label value="Porzione da modificare" background="#0000ff"/>
+  </Labels>
+  <Text name="text_2" value="$sentence" granularity="word"/>
+  <Header value="-------------------------------------------------"/>
+  <Header value="Riformulazioni della sequenza (una o più):"/>
+  <TextArea name="translations" value="$sentence"/>
+</View>
+<!-- {
+"data": {"sentence": "This is a great 3D movie that delivers everything almost right in your face."}
+}
+-->
+'
