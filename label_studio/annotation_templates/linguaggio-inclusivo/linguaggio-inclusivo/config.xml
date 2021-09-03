@@ -24,8 +24,8 @@
     <Choice value="tecnico"/>
     <Choice value="divulgativo"/>
     <Choice value="informativo"/>
-  <Header value="-------------------------------------------------"/>
   </Choices>
+  <Header value="-------------------------------------------------"/>
     <Labels name="to_change" toName="text_2">
     <Label value="Porzione da modificare" background="#0000ff"/>
   </Labels>
