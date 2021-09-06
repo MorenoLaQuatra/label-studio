@@ -3,7 +3,8 @@
   <Labels name="ner" toName="text">
     <Label value="Titolo Doc" background="#0000ff"/>
     <Label value="Citazione" background="#00aaaa"/>
-    <Label value="Appellativo" background="#00ff00"/>
+    <Label value="Appellativo Declinabile" background="#00ff00"/>
+    <Label value="Appellativo Non Declinabile" background="#aaaa00"/>
     <Label value="Sintagma" background="#ff0000"/>
     <Label value="Black List" background="#000000"/>
   </Labels>
