@@ -55,3 +55,6 @@ tmp
 .DS_Store
 *.sqlite3
 label_studio/core/settings/local.py
+
+# sample data folder used for Docker
+label-studio-data/
