@@ -1,0 +1,48 @@
+title: Ecriture inclusive
+type: community
+group: Ecriture inclusive
+details: <h1>Etiquetage des documents pour une écriture inclusive</h1>
+image: /static/templates/linguaggio-inclusivo.png
+config: '
+<View>
+  <Header value="Etiquette (clic sul tipo + evidenziazione sul testo):"/>
+  <Labels name="ner" toName="text">
+    <Label value="Titre Doc" background="#0000ff"/>
+    <Label value="Citation" background="#00aaaa"/>
+    <Label value="Appellatif à accorder" background="#00ff00"/>
+    <Label value="Appellatif correct" background="#aaaa00"/>
+    <Label value="Syntagme" background="#ff0000"/>
+    <Label value="Liste noire" background="#000000"/>
+  </Labels>
+  <Text name="text" value="$sentence" granularity="word"/>
+  <Header value="-------------------------------------------------"/>
+  <Header value="Classe:"/>
+  <Choices name="inclusive_class" toName="text" choice="single" showInLine="true">
+    <Choice value="Inclusif"/>
+    <Choice value="Non inclusif"/>
+    <Choice value="Non pertinent"/>
+    <Choice value="Autre"/>
+  </Choices>
+  <Header value="-------------------------------------------------"/>
+  <Header value="Séquence discursive:"/>
+  <Choices name="seq_discourse" toName="text" choice="single" showInLine="true">
+    <Choice value="d. juridique"/>
+    <Choice value="d. admministratif"/>
+    <Choice value="d. technique"/>
+    <Choice value="d. de vulgarisation"/>
+    <Choice value="d. informatif"/>
+  </Choices>
+  <Header value="-------------------------------------------------"/>
+    <Labels name="to_change" toName="text_2">
+    <Label value="Texte à modifier" background="#0000ff"/>
+  </Labels>
+  <Text name="text_2" value="$sentence" granularity="word"/>
+  <Header value="-------------------------------------------------"/>
+  <Header value="Reformulation du texte (une ou plusieurs):"/>
+  <TextArea name="translations" value="$sentence" rows="5" showSubmitButton="true" toName="text"/>
+</View>
+<!-- {
+"data": {"sentence": "This is a great 3D movie that delivers everything almost right in your face."}
+}
+-->
+'
