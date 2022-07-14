@@ -1,5 +1,9 @@
+<<<<<<< HEAD
+q# Building the main container
+=======
 
 # syntax=docker/dockerfile:1.3
+>>>>>>> 5b6db7e7426f1aa7255a89d4caa561e2a2ee17a4
 FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND=noninteractive \
@@ -24,9 +28,20 @@ RUN --mount=type=cache,target=$PIP_CACHE_DIR \
 
 # Copy and install requirements.txt first for caching
 COPY deploy/requirements.txt /label-studio
+<<<<<<< HEAD
+
+RUN pip3 install --upgrade pip
+RUN pip3 install -r requirements.txt && pip install uwsgi
+
+ENV DJANGO_SETTINGS_MODULE=core.settings.label_studio
+ENV LABEL_STUDIO_BASE_DATA_DIR=/label-studio/data
+ENV DEBUG=true
+ENV LABEL_STUDIO_DISABLE_SIGNUP_WITHOUT_LINK=true
+=======
 RUN --mount=type=cache,target=$PIP_CACHE_DIR \
     pip3 install -r requirements.txt
 
+>>>>>>> 5b6db7e7426f1aa7255a89d4caa561e2a2ee17a4
 COPY . /label-studio
 RUN --mount=type=cache,target=$PIP_CACHE_DIR \
     pip3 install -e .
