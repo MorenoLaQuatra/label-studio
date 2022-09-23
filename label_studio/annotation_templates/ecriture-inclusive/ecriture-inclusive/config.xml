@@ -6,6 +6,7 @@
     <Label value="Appellatif à accorder" background="#00ff00"/>
     <Label value="Appellatif correct" background="#aaaa00"/>
     <Label value="Syntagme" background="#ff0000"/>
+    <Label value="Sigle" background="#aa00aa"/>
     <Label value="Liste noire" background="#000000"/>
   </Labels>
   <Text name="text" value="$sentence" granularity="word"/>
@@ -23,8 +24,13 @@
     <Choice value="d. juridique"/>
     <Choice value="d. admministratif"/>
     <Choice value="d. technique"/>
-    <Choice value="d. de vulgarisation"/>
     <Choice value="d. informatif"/>
+  </Choices>
+  <Header value="Language clair:"/>
+  <Choices name="clear_language" toName="text" choice="single" showInLine="true">
+    <Choice value="de specialité"/>
+    <Choice value="neutre"/>
+    <Choice value="de vulgarisation"/>
   </Choices>
   <Header value="-------------------------------------------------"/>
     <Labels name="to_change" toName="text_2">
