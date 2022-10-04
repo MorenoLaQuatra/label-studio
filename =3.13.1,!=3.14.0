@@ -1,0 +1,5 @@
+Requirement already satisfied: djangorestframework in /home/moreno/anaconda3/envs/label_studio/lib/python3.8/site-packages (3.14.0)
+Requirement already satisfied: pytz in /home/moreno/anaconda3/envs/label_studio/lib/python3.8/site-packages (from djangorestframework) (2019.3)
+Requirement already satisfied: django>=3.0 in /home/moreno/anaconda3/envs/label_studio/lib/python3.8/site-packages (from djangorestframework) (3.1.13)
+Requirement already satisfied: asgiref<4,>=3.2.10 in /home/moreno/anaconda3/envs/label_studio/lib/python3.8/site-packages (from django>=3.0->djangorestframework) (3.5.2)
+Requirement already satisfied: sqlparse>=0.2.2 in /home/moreno/anaconda3/envs/label_studio/lib/python3.8/site-packages (from django>=3.0->djangorestframework) (0.4.3)

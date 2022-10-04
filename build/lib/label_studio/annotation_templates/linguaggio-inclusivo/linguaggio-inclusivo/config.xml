@@ -3,8 +3,10 @@
   <Labels name="ner" toName="text">
     <Label value="Titolo Doc" background="#0000ff"/>
     <Label value="Citazione" background="#00aaaa"/>
-    <Label value="Appellativo" background="#00ff00"/>
+    <Label value="Segmento Declinabile" background="#00ff00"/>
+    <Label value="Segmento Non Declinabile" background="#aaaa00"/>
     <Label value="Sintagma" background="#ff0000"/>
+    <Label value="Sigla" background="#aa00aa"/>
     <Label value="Black List" background="#000000"/>
   </Labels>
   <Text name="text" value="$sentence" granularity="word"/>
@@ -22,8 +24,14 @@
     <Choice value="giuridico"/>
     <Choice value="amministrativo"/>
     <Choice value="tecnico"/>
-    <Choice value="divulgativo"/>
     <Choice value="informativo"/>
+  </Choices>
+  <Header value="-------------------------------------------------"/>
+  <Header value="Linguaggio Chiaro:"/>
+  <Choices name="clear_language" toName="text" choice="single" showInLine="true">
+    <Choice value="specialistico"/>
+    <Choice value="neutro"/>
+    <Choice value="divulgativo"/>
   </Choices>
   <Header value="-------------------------------------------------"/>
     <Labels name="to_change" toName="text_2">
@@ -32,7 +40,7 @@
   <Text name="text_2" value="$sentence" granularity="word"/>
   <Header value="-------------------------------------------------"/>
   <Header value="Riformulazioni della sequenza (una o più):"/>
-  <TextArea name="translations" value="$sentence" rows="5"/>
+  <TextArea name="translations" value="$sentence" rows="5" showSubmitButton="true" toName="text"/>
 </View>
 <!-- {
 "data": {"sentence": "This is a great 3D movie that delivers everything almost right in your face."}

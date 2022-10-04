@@ -28,7 +28,7 @@
   </Choices>
   <Header value="Language clair:"/>
   <Choices name="clear_language" toName="text" choice="single" showInLine="true">
-    <Choice value="de spécialité"/>
+    <Choice value="de specialité"/>
     <Choice value="neutre"/>
     <Choice value="de vulgarisation"/>
   </Choices>
