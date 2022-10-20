@@ -2,7 +2,7 @@ title: Linguaggio Inclusivo
 type: community
 group: Linguaggio Inclusivo
 details: <h1>Annotazione documenti per linguaggio inclusivo</h1>
-image: /static/templates/linguaggio-inclusivo.png
+image: /static/templates/it.png
 config: '
 <View>
   <Header value="Tag (clic sul tipo + evidenziazione sul testo):"/>
@@ -36,7 +36,7 @@ config: '
   <Header value="Linguaggio Chiaro:"/>
   <Choices name="clear_language" toName="text" choice="single" showInLine="true">
     <Choice value="specialistico"/>
-    <Choice value="neutro"/>
+    <Choice value="standard"/>
     <Choice value="divulgativo"/>
   </Choices>
   <Header value="-------------------------------------------------"/>

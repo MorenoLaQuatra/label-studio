@@ -29,7 +29,7 @@
   <Header value="Language clair:"/>
   <Choices name="clear_language" toName="text" choice="single" showInLine="true">
     <Choice value="de spécialité"/>
-    <Choice value="neutre"/>
+    <Choice value="standard"/>
     <Choice value="de vulgarisation"/>
   </Choices>
   <Header value="-------------------------------------------------"/>

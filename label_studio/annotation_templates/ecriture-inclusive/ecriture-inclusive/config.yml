@@ -2,7 +2,7 @@ title: Ecriture inclusive
 type: community
 group: Ecriture inclusive
 details: <h1>Etiquetage des documents pour une écriture inclusive</h1>
-image: /static/templates/linguaggio-inclusivo.png
+image: /static/templates/fr.png
 config: '
 <View>
   <Header value="Etiquette (clic sul tipo + evidenziazione sul testo):"/>
@@ -35,7 +35,7 @@ config: '
   <Header value="Language clair:"/>
   <Choices name="clear_language" toName="text" choice="single" showInLine="true">
     <Choice value="de spécialité"/>
-    <Choice value="neutre"/>
+    <Choice value="standard"/>
     <Choice value="de vulgarisation"/>
   </Choices>
   <Header value="-------------------------------------------------"/>

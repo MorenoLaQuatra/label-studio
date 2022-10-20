@@ -1,55 +1,48 @@
-title: Linguaggio Inclusivo
-type: community
-group: Linguaggio Inclusivo
-details: <h1>Annotazione documenti per linguaggio inclusivo</h1>
-image: /static/templates/it.png
-config: '
 <View>
-  <Header value="Tag (clic sul tipo + evidenziazione sul testo):"/>
+  <Header value="Tag (clic en el tipo + evidenciación en el texto):"/>
   <Labels name="ner" toName="text">
-    <Label value="Titolo Doc" background="#0000ff"/>
-    <Label value="Citazione" background="#00aaaa"/>
-    <Label value="Segmento Declinabile" background="#00ff00"/>
-    <Label value="Segmento Non Declinabile" background="#aaaa00"/>
+    <Label value="Título Doc" background="#0000ff"/>
+    <Label value="Cita" background="#00aaaa"/>
+    <Label value="Segmento Declinable" background="#00ff00"/>
+    <Label value="Segmento No Declinable" background="#aaaa00"/>
     <Label value="Sintagma" background="#ff0000"/>
     <Label value="Sigla" background="#aa00aa"/>
     <Label value="Black List" background="#000000"/>
   </Labels>
   <Text name="text" value="$sentence" granularity="word"/>
   <Header value="-------------------------------------------------"/>
-  <Header value="Classe:"/>
+  <Header value="Clasificación:"/>
   <Choices name="inclusive_class" toName="text" choice="single" showInLine="true">
     <Choice value="Inclusivo"/>
-    <Choice value="Non inclusivo"/>
-    <Choice value="Non pertinente"/>
-    <Choice value="Non so"/>
+    <Choice value="No inclusivo"/>
+    <Choice value="No pertinente"/>
+    <Choice value="No sé"/>
   </Choices>
   <Header value="-------------------------------------------------"/>
-  <Header value="Sequenza discorsiva:"/>
+  <Header value="Secuencia discursiva:"/>
   <Choices name="seq_discourse" toName="text" choice="single" showInLine="true">
-    <Choice value="giuridico"/>
-    <Choice value="amministrativo"/>
-    <Choice value="tecnico"/>
+    <Choice value="jurídico"/>
+    <Choice value="administrativo"/>
+    <Choice value="técnico"/>
     <Choice value="informativo"/>
   </Choices>
   <Header value="-------------------------------------------------"/>
-  <Header value="Linguaggio Chiaro:"/>
+  <Header value="Lenguaje Claro:"/>
   <Choices name="clear_language" toName="text" choice="single" showInLine="true">
-    <Choice value="specialistico"/>
-    <Choice value="standard"/>
-    <Choice value="divulgativo"/>
+    <Choice value="de especialidad"/>
+    <Choice value="estándar"/>
+    <Choice value="divulgativo "/>
   </Choices>
   <Header value="-------------------------------------------------"/>
     <Labels name="to_change" toName="text_2">
-    <Label value="Porzione da modificare" background="#0000ff"/>
+    <Label value="Fragmento que modificar" background="#0000ff"/> testo da modificare (porzione di testo che va modificato)
   </Labels>
   <Text name="text_2" value="$sentence" granularity="word"/>
   <Header value="-------------------------------------------------"/>
-  <Header value="Riformulazioni della sequenza (una o più):"/>
+  <Header value="Reformulación de la secuencia (una o más):"/>
   <TextArea name="translations" value="$sentence" rows="5" showSubmitButton="true" toName="text"/>
 </View>
 <!-- {
 "data": {"sentence": "This is a great 3D movie that delivers everything almost right in your face."}
 }
 -->
-'
