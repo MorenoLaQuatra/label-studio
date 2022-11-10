@@ -21,10 +21,10 @@
   <Header value="-------------------------------------------------"/>
   <Header value="Séquence discursive:"/>
   <Choices name="seq_discourse" toName="text" choice="single" showInLine="true">
-    <Choice value="Juridique"/>
-    <Choice value="Administratif"/>
-    <Choice value="Technique"/>
-    <Choice value="Informatif"/>
+    <Choice value="Discourse juridique"/>
+    <Choice value="Discourse administratif"/>
+    <Choice value="Discourse technique"/>
+    <Choice value="Discourse informatif"/>
   </Choices>
   <Header value="Language clair:"/>
   <Choices name="clear_language" toName="text" choice="single" showInLine="true">

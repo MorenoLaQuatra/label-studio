@@ -27,10 +27,10 @@ config: '
   <Header value="-------------------------------------------------"/>
   <Header value="Séquence discursive:"/>
   <Choices name="seq_discourse" toName="text" choice="single" showInLine="true">
-    <Choice value="Juridique"/>
-    <Choice value="Administratif"/>
-    <Choice value="Technique"/>
-    <Choice value="Informatif"/>
+    <Choice value="Discourse juridique"/>
+    <Choice value="Discourse Administratif"/>
+    <Choice value="Discourse Technique"/>
+    <Choice value="Discourse Informatif"/>
   </Choices>
   <Header value="Language clair:"/>
   <Choices name="clear_language" toName="text" choice="single" showInLine="true">
