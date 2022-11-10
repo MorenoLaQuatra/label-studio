@@ -1,5 +1,5 @@
 <View>
-  <Header value="Etiquette (clic sul tipo + evidenziazione sul testo):"/>
+  <Header value="Etiquette (sélectionnez étiquette et surlignez le texte):"/>
   <Labels name="ner" toName="text">
     <Label value="Titre Doc" background="#0000ff"/>
     <Label value="Citation" background="#00aaaa"/>
@@ -21,10 +21,10 @@
   <Header value="-------------------------------------------------"/>
   <Header value="Séquence discursive:"/>
   <Choices name="seq_discourse" toName="text" choice="single" showInLine="true">
-    <Choice value="d. juridique"/>
-    <Choice value="d. admministratif"/>
-    <Choice value="d. technique"/>
-    <Choice value="d. informatif"/>
+    <Choice value="Juridique"/>
+    <Choice value="Administratif"/>
+    <Choice value="Technique"/>
+    <Choice value="Informatif"/>
   </Choices>
   <Header value="Language clair:"/>
   <Choices name="clear_language" toName="text" choice="single" showInLine="true">
