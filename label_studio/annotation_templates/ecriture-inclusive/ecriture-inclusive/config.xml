@@ -1,5 +1,5 @@
 <View>
-  <Header value="Etiquette (sélectionnez étiquette et surlignez le texte):"/>
+  <Header value="Etiquette (Faites votre sélection et surlignez le texte):"/>
   <Labels name="ner" toName="text">
     <Label value="Titre Doc" background="#0000ff"/>
     <Label value="Citation" background="#00aaaa"/>
