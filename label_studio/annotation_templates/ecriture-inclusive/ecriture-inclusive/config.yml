@@ -27,12 +27,12 @@ config: '
   <Header value="-------------------------------------------------"/>
   <Header value="Séquence discursive:"/>
   <Choices name="seq_discourse" toName="text" choice="single" showInLine="true">
-    <Choice value="Discourse juridique"/>
-    <Choice value="Discourse Administratif"/>
-    <Choice value="Discourse Technique"/>
-    <Choice value="Discourse Informatif"/>
+    <Choice value="Discours juridique"/>
+    <Choice value="Discours administratif"/>
+    <Choice value="Discours technique"/>
+    <Choice value="Discours unformatif"/>
   </Choices>
-  <Header value="Language clair:"/>
+  <Header value="Langage clair:"/>
   <Choices name="clear_language" toName="text" choice="single" showInLine="true">
     <Choice value="de spécialité"/>
     <Choice value="standard"/>
@@ -44,7 +44,7 @@ config: '
   </Labels>
   <Text name="text_2" value="$sentence" granularity="word"/>
   <Header value="-------------------------------------------------"/>
-  <Header value="Reformulation du texte (une ou plusieurs):"/>
+  <Header value="Reformulation du texte (une ou plusieurs solutions possibles):"/>
   <TextArea name="translations" value="$sentence" rows="5" showSubmitButton="true" toName="text"/>
 </View>
 <!-- {
